@@ -72,3 +72,11 @@ select {
 	white-space: nowrap;
 	width: 1px;
 }
+
+/* General styling */
+
+/* Utilities */
+
+.hidden {
+	display: none;
+}
