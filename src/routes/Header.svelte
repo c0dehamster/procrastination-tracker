@@ -24,12 +24,13 @@
 			{#each tags as name}
 				<!-- Moving the tag item to a separate component
             doesn't help due to a bug -->
-				<li class="tag">
-					<label for={name} class="tag__label">{name}</label>
+				<li class="tags__list-item">
+					<label for={`header-${name}`} class="tag__label"
+						>{name}</label>
 					<input
 						type="checkbox"
 						class="hidden"
-						id={name}
+						id={`header-${name}`}
 						{name}
 						value={name}
 						bind:group={tagsActive} />
