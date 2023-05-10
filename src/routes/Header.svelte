@@ -1,8 +1,9 @@
 <script lang="ts">
 	import ToggleTags from "./ToggleTags.svelte"
 
+	import { tags } from "./Tags"
+
 	let tagListExpanded = false
-	let tags = ["Movie", "Book", "Article", "Tutorial", "Project"]
 	let tagsActive: Array<string> = []
 
 	$: console.log(tagsActive)
