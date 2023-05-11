@@ -1,6 +1,7 @@
 export  interface Media {
     id: string
     title: string
-    tag: "Movie" | "Book" | "Article" | "Tutorial" | "Project"
+    tag: string
     checked: boolean
+    pinned: boolean
 }

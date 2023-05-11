@@ -5,11 +5,11 @@
 	import { faPenToSquare } from "@fortawesome/free-solid-svg-icons"
 	import { faThumbTack } from "@fortawesome/free-solid-svg-icons"
 
-	export let title: string
-	export let id: string
-	export let tag: string
-	export let checked = false
-	export let pinned = false
+	import type { Media } from "./utils"
+
+	export let media: Media
+
+	let { id, title, tag, checked, pinned } = media
 </script>
 
 <li class="media-item">
